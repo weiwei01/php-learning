@@ -1,0 +1,50 @@
+CREATE DATABASE mylibrary
+  CHARACTER SET utf8
+  COLLATE utf8_general_ci;
+  
+CREATE TABLE book(
+    name varchar(255) NOT NULL,
+    type varchar(255) NOT NULL,
+    is_new int NOT NULL,
+    is_borrowed int NOT NULL,
+    is_in_library int NOT NULL,
+    PRIMARY KEY (name)
+);
+
+
+INSERT INTO book( NAME , TYPE , is_new , is_borrowed , is_in_library )
+VALUES
+	(
+		"醞釀7年一歌入魂！2019年情歌只聽這一張",
+		"video",
+		1,
+	1,
+	1);
+
+INSERT INTO book( NAME , TYPE , is_new , is_borrowed , is_in_library )
+VALUES
+	(
+		"慕敏家族展開式化妝收納包附鏡子",
+		"ebook",
+		0,
+	1,
+	1);
+
+INSERT INTO book( NAME , TYPE , is_new , is_borrowed , is_in_library )
+VALUES
+	(
+		"想我的時候就煮一鍋咖哩治療心碎",
+		"book",
+		0,
+	0,
+	1);
+
+INSERT INTO book( NAME , TYPE , is_new , is_borrowed , is_in_library )
+VALUES
+	(
+		"在路上遇到貓，就摸一摸",
+		"book",
+		0,
+	0,
+	0);
+
