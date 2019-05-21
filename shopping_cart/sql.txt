@@ -1,0 +1,44 @@
+CREATE DATABASE mylibrary
+  CHARACTER SET utf8
+  COLLATE utf8_general_ci;
+  
+CREATE TABLE bookstore(
+    name varchar(255) NOT NULL,
+    type varchar(255) NOT NULL,
+    price int NOT NULL,
+    PRIMARY KEY (name)
+);
+
+
+INSERT INTO bookstore( NAME , TYPE , price)
+VALUES
+	(
+		"醞釀7年一歌入魂！2019年情歌只聽這一張",
+		"video",
+		100
+	);
+
+INSERT INTO bookstore( NAME , TYPE , price))
+VALUES
+	(
+		"慕敏家族展開式化妝收納包附鏡子",
+		"ebook",
+		200
+	);
+
+INSERT INTO bookstore( NAME , TYPE , price))
+VALUES
+	(
+		"想我的時候就煮一鍋咖哩治療心碎",
+		"book",
+		300
+	);
+
+INSERT INTO bookstore( NAME , TYPE , price)
+VALUES
+	(
+		"在路上遇到貓，就摸一摸",
+		"book",
+		400
+	);
+
