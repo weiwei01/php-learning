@@ -1,0 +1,49 @@
+CREATE DATABASE mycompany
+  CHARACTER SET utf8
+  COLLATE utf8_general_ci;
+  
+  
+CREATE TABLE student(
+	account VARCHAR(30) NOT NULL ,
+	password VARCHAR(30) NOT NULL,
+	firstname VARCHAR(30),
+	lastname VARCHAR(30),
+	email VARCHAR(50),
+	PRIMARY KEY (account)
+);
+
+CREATE TABLE manager(
+	account VARCHAR(30) NOT NULL,
+	password VARCHAR(30) NOT NULL,
+	firstname VARCHAR(30),
+	lastname VARCHAR(30),
+	email VARCHAR(50),
+	PRIMARY KEY (account)
+);
+
+CREATE TABLE people(
+	account VARCHAR(30) NOT NULL ,
+	password VARCHAR(30) NOT NULL,
+	firstname VARCHAR(30),
+	lastname VARCHAR(30),
+	email VARCHAR(50),
+	PRIMARY KEY (account)
+);
+
+INSERT INTO people( account , password , firstname , lastname , email )
+VALUES
+	(
+		"jenny",
+		"123456",
+		"Jenny",
+	"Huang",
+	"jj@jj.com");
+	
+INSERT INTO student( account , password , firstname , lastname , email )
+VALUES
+	(
+		"peter",
+		"123456",
+		"Jenny",
+	"Huang",
+	"jj@jj.com");

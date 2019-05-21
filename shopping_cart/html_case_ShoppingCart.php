@@ -13,9 +13,10 @@
 	</div>
 
 	<div id="add">
-		<button>商品一 100元</button>
-		<button>商品二 500元</button>
-		<button>商品三 1000元</button>
+		<button class="btn" value="100">商品一 100元</button>
+		<button class="btn" value="500">商品二 500元</button>
+		<button class="btn" value="1000">商品三 1000元</button>
+		<button class="btn" value="5000">商品四 5000元</button>
     </div>
 
     <div id="cart">
@@ -39,7 +40,7 @@
 	#top_nav{
 		border:2px black solid;
 		margin: 0 auto;
-		width: 400px;
+		width: 460px;
 		position: relative;
 		/*top: 100px;*/
 	}
@@ -51,10 +52,13 @@
 	#add{
 		border:2px black solid;
 		margin: 0 auto;
-		width: 400px;
+		width: 460px;
 		position: relative;
 		top: 100px;
+	}
 
+	.btn{
+		width:110px; 
 	}
 
 	#cart{
