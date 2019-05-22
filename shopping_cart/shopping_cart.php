@@ -53,16 +53,15 @@
 						array_push($arr, $book);
 						$_SESSION["shopping_cart_array"]=$arr;
 					}
-					
+				}	
+				
+				if(!empty($_SESSION["shopping_cart_array"])){ 
 					$productList = ($_SESSION["shopping_cart_array"]);
 					include("readdb_php.php");
-
 					foreach($productList as $product) {
 						foreach ($product as $productName) {
 							//echo "$productName ";
-
 							$conn = readDb();
-							$bookname = $_GET["name"];
 							$sql = "Select * from bookstore where name = '$productName' ";
 							$total_fields = 3;	
 							if ( $result = mysqli_query($conn, $sql) ) {				
@@ -75,12 +74,8 @@
 								//釋放記憶體
 								mysqli_free_result($result);
 							}
-
-							
-							
 						}
-					} 
-				
+					} 				
 					echo "<tr>";
 					echo "<td>";
 					echo "</td>";
@@ -90,8 +85,8 @@
 					echo "</tr>";
 					echo "</table>";
 					echo "<a href=checkout>Check Out</a>";
-
 				}
+				
 			?>
 		
 	</div>

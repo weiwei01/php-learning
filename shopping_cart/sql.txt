@@ -18,7 +18,7 @@ VALUES
 		100
 	);
 
-INSERT INTO bookstore( NAME , TYPE , price))
+INSERT INTO bookstore( NAME , TYPE , price)
 VALUES
 	(
 		"慕敏家族展開式化妝收納包附鏡子",
@@ -26,7 +26,7 @@ VALUES
 		200
 	);
 
-INSERT INTO bookstore( NAME , TYPE , price))
+INSERT INTO bookstore( NAME , TYPE , price)
 VALUES
 	(
 		"想我的時候就煮一鍋咖哩治療心碎",
