@@ -1,0 +1,68 @@
+CREATE DATABASE mycity
+  CHARACTER SET utf8
+  COLLATE utf8_general_ci;
+  
+CREATE TABLE city(
+    id varchar(255) NOT NULL AUTO_INCREMENT,
+    city varchar(255) NOT NULL,
+    hometown varchar(255) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+
+INSERT INTO city(city , hometown)
+VALUES
+	(
+		"神聖羅馬帝國",
+		"布拉格"
+	);
+
+INSERT INTO city(city , hometown)
+VALUES
+	(
+		"神聖羅馬帝國",
+		"美因河畔法蘭克福"
+	);
+
+INSERT INTO city(city , hometown)
+VALUES
+	(
+		"神聖羅馬帝國",
+		"雷根斯堡"
+	);
+
+INSERT INTO city(city , hometown)
+VALUES
+	(
+		"神聖羅馬帝國",
+		"韋茨拉爾"
+	);
+
+	
+INSERT INTO city(city , hometown)
+VALUES
+	(
+		"霍格華茲魔法與巫術學院",
+		"葛來分多"
+	);
+
+INSERT INTO city(city , hometown)
+VALUES
+	(
+		"霍格華茲魔法與巫術學院",
+		"赫夫帕夫"
+	);
+
+INSERT INTO city(city , hometown)
+VALUES
+	(
+		"霍格華茲魔法與巫術學院",
+		"雷文克勞"
+	);
+
+INSERT INTO city(city , hometown)
+VALUES
+	(
+		"霍格華茲魔法與巫術學院",
+		"史萊哲林"
+	);
