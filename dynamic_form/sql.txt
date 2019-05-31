@@ -3,7 +3,7 @@ CREATE DATABASE mycity
   COLLATE utf8_general_ci;
   
 CREATE TABLE city(
-    id varchar(255) NOT NULL AUTO_INCREMENT,
+    id id(255) NOT NULL AUTO_INCREMENT,
     city varchar(255) NOT NULL,
     hometown varchar(255) NOT NULL,
     PRIMARY KEY (id)
